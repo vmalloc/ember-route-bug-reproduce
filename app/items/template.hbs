@@ -1,0 +1,9 @@
+<h3>Params: {{model.page}}</h3>
+<h3>Search: {{model.search}}</h3>
+
+<p>
+{{#link-to "items" (query-params search='bla')}}search{{/link-to}}
+</p>
+<p>
+  <button {{action "increment"}}>Next page</button>
+</p>
